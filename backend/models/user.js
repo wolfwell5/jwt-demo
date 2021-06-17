@@ -39,10 +39,10 @@ let User = connection.model("User", UserSchema);
 /**
  * 方法一：
  */
-// User.create({ username: 'abc', password: 'abc',admin:true}, (err, doc) => {
-//     console.log(err);
-//     console.log(doc);
-// });
+User.create({ username: 'a', password: 'a',admin:true}, (err, doc) => {
+    console.log(err);
+    console.log(doc);
+});
 
 // _id 是 mongodb 帮我们生成的一个主键，不会重复，可以用来标识每一个文档
 // __v 是内部使用，用来加锁解决并发问题
@@ -50,13 +50,13 @@ let User = connection.model("User", UserSchema);
 /**
  * 方法二：
  */
-// let user1 = new User({ username: 'abc', password: 'abc'});
-// console.log(user1);
+let user1 = new User({ username: 'abc', password: 'abc'});
+console.log(user1);
 // 调用 save 方法可以把自己保存到数据库里
-// user1.save((err, doc) => {
-//     console.log(err);
-//     console.log(doc);
-// });
+user1.save((err, doc) => {
+    console.log(err);
+    console.log(doc);
+});
 
 /**
  * 删除
