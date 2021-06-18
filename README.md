@@ -1,4 +1,4 @@
-# yarn add, npm install 等安装依赖
+# yarn add, npm install, npm install react-scripts 等安装依赖
 
 ### 教程地址 https://zellwk.com/blog/local-mongodb/
 

@@ -16,6 +16,7 @@ router.get('/list', jwt.verify(), async (req, res) => {
 // /aritcles/add 增加一个新的文章
 router.post('/add', jwt.verify(true), async (req, res) => {
     let article = new Article(req.body);
+    console.log('save', article);
     try {
         await article.save();
         res.success(article);

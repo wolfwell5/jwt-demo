@@ -14,10 +14,12 @@ export default class App extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <Route exact path="/" component={Home}/>
-                            <Route exact path="/users/signup" component={Signup}/>
-                            <Route exact path="/users/signin" component={Signin}/>
-                            <Route exact path="/articles/add" component={AddArticle}/>
+                            <switch>
+                                <Route exact path="/" component={Home}/>
+                                <Route exact path="/users/signup" component={Signup}/>
+                                <Route exact path="/users/signin" component={Signin}/>
+                                <Route exact path="/articles/add" component={AddArticle}/>
+                            </switch>
                         </div>
                     </div>
                 </div>
