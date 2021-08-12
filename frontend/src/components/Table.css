@@ -1,0 +1,83 @@
+.reactTable {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout:fixed;
+}
+
+.tableHead {
+  background-color: #dddddd;
+}
+
+.tableRow {
+  height: 40px;
+  border-bottom: solid 1px #dddddd;
+}
+
+.tableCell {
+  font-size: 14px;
+  text-align: left;
+  color: #666666;
+  padding: 16px 12px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.tableHeaderCell {
+  padding: 0 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  color: #4c4c4c;
+}
+
+.noRowsFoundText {
+  margin-top: 8px;
+}
+
+.searchResultPagination {
+  display: flex;
+
+& .arrowButtons {
+    background: none;
+    border: none;
+    color: #333;
+    width: 20px;
+    height: 20px;
+    min-height: unset;
+    padding: 0;
+    margin: 0 12px;
+    font-size: 14px;
+  }
+
+& .arrowButtons:disabled {
+    color: #9a9a9a;
+  }
+
+& .arrowButtons:focus {
+    outline: none;
+  }
+
+& .arrowButtons:hover {
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+  }
+
+& .angleLeft::before {
+    position: relative;
+  }
+
+& .angleRight::before {
+    position: relative;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paginationButtons {
+    display: flex;
+    font-size: 14px;
+}

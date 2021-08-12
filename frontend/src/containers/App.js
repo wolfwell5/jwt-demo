@@ -1,10 +1,11 @@
 import React, {Component, Fragment} from 'react';
-import {Link, Route} from 'react-router-dom';
+import {Link, Route, Switch} from 'react-router-dom';
 import Signup from './Signup';
 import Signin from './Signin';
 import Home from './Home';
 import AddArticle from './AddArticle';
-import Header from '../componets/Header';
+import ShowAllArticles from './ArticleTableData';
+import Header from '../components/Header';
 
 export default class App extends Component {
     render() {
@@ -14,12 +15,13 @@ export default class App extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <switch>
+                            <Switch>
                                 <Route exact path="/" component={Home}/>
                                 <Route exact path="/users/signup" component={Signup}/>
                                 <Route exact path="/users/signin" component={Signin}/>
                                 <Route exact path="/articles/add" component={AddArticle}/>
-                            </switch>
+                                <Route exact path="/articles/showAll" component={ShowAllArticles}/>
+                            </Switch>
                         </div>
                     </div>
                 </div>

@@ -24,7 +24,7 @@ class AddArticle extends Component {
                     <input className="form-control" ref={input => this.content = input}/>
                 </div>
                 <div className="form-group">
-                    <input className="btn btn-primary" type="submit"/>
+                    <input className="btn btn-primary" type="submit" value={'Save Button'}/>
                 </div>
                 {
                     error && <div className="form-group">

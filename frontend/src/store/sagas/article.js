@@ -8,7 +8,8 @@ function* addArticle(action) {
     try {
         let response = yield call(articleApi.addArticle, payload);
         yield put({ type: types.ADD_ARTICLE_SUCCESS });
-        yield put(push('/'));
+        // yield put(push('/'));
+        yield put(push('/articles/showAll'));
     } catch (error) {
         yield put({ type: types.ADD_ARTICLE_FAIL, error });
     }

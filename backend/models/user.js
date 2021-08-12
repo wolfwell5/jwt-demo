@@ -39,7 +39,7 @@ let User = connection.model("User", UserSchema);
 /**
  * 方法一：
  */
-User.create({ username: 'a', password: 'a',admin:true}, (err, doc) => {
+User.create({ username: 'admin', password: 'admin',admin:true}, (err, doc) => {
     console.log(err);
     console.log(doc);
 });
