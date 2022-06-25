@@ -9,6 +9,7 @@ class Header extends Component {
     }
 
     render() {
+        console.log('header', this.props);
         const {user,logout} = this.props;
         return (
             <nav className="navbar navbar-default">
@@ -22,6 +23,7 @@ class Header extends Component {
                             {!user && <li><Link to="/users/signup">注册</Link></li>}
                             {!user && <li><Link to="/users/signin">登录</Link></li>}
                             {user && <li><Link to="/articles/add">发表文章</Link></li>}
+                            {user && <li><Link to="/articles/showAll">文章列表</Link></li>}
                         </ul>
                         {
                             user && <ul className="nav navbar-nav navbar-right">

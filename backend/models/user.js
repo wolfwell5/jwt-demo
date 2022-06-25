@@ -50,7 +50,7 @@ User.create({ username: 'admin', password: 'admin',admin:true}, (err, doc) => {
 /**
  * 方法二：
  */
-let user1 = new User({ username: 'abc', password: 'abc'});
+let user1 = new User({ username: 'user', password: 'user'});
 console.log(user1);
 // 调用 save 方法可以把自己保存到数据库里
 user1.save((err, doc) => {

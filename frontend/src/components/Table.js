@@ -44,7 +44,7 @@ function Table({ columns, data, children }) {
         <div className={styles.paginationButtons}>
           <span>
             <strong>{`${getStartResultIndex() + 1} - ${getEndResultIndex()}`}</strong>
-            {` von`} <strong>{rows.length}</strong> Ergebnisse
+            {` - `} <strong>{rows.length}</strong> result
           </span>
           <div className={styles.searchResultPagination}>
             <button

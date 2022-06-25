@@ -23,5 +23,6 @@ export const LOAD_USER = 'LOAD_USER';
 
 // 增加文章
 export const ADD_ARTICLE = 'ADD_ARTICLE';
+export const GET_ALL_ARTICLES = 'GET_ALL_ARTICLE';
 export const ADD_ARTICLE_SUCCESS = 'ADD_ARTICLE_SUCCESS';
 export const ADD_ARTICLE_FAIL = 'ADD_ARTICLE_FAIL';

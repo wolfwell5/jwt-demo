@@ -28,3 +28,8 @@ axios.interceptors.response.use(res => {
 export function post(url, body) {
     return axios.post(BASE_URL + url, body);
 }
+
+export function get(url, body) {
+    console.log('url & body', url);
+    return axios.get(BASE_URL + url, body);
+}

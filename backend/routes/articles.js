@@ -7,6 +7,8 @@ const router = express.Router();
 router.get('/list', jwt.verify(), async (req, res) => {
     try {
         let articles = await Artcle.find();
+        console.log('articles list', articles);
+
         res.success(articles);
     } catch (error) {
         res.error(error);
